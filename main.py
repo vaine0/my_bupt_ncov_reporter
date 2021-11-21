@@ -87,9 +87,9 @@ text += names[0] + '\n' + ress[0] + '\n\n'
 text += names[1] + '\n' + ress[1]
 text = request.quote(text)
 url += text
-# print(url)
-req=request.Request(url)
-resp=request.urlopen(req)
+# # print(url)
+# req=request.Request(url)
+# resp=request.urlopen(req)
 requests.get(url)
 
 try:
