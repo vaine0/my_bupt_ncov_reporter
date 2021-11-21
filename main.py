@@ -79,17 +79,13 @@ for user in  USERS:
     datas+=[data]
     usernames+=[username]
     names+=[name]
-    
-from urllib import request
-url = r"https://api.telegram.org/bot2095845659:AAF7G9A64SzUDswfAP8gXGlX3Mm0LGEE1yc/sendMessage?chat_id=-1001693376379&text="
+
+# send to telegram
+url = r"https://api.telegram.org/bot" + BOT_TOKEN + "/sendMessage?chat_id=" + CHAT_ID + "&text="
 text = ""
 text += names[0] + '\n' + ress[0] + '\n\n'
 text += names[1] + '\n' + ress[1]
-text = request.quote(text)
 url += text
-# # print(url)
-# req=request.Request(url)
-# resp=request.urlopen(req)
 requests.get(url)
 
 try:
