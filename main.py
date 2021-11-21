@@ -81,7 +81,7 @@ for user in  USERS:
     names+=[name]
 
 # send to telegram
-url = r"https://api.telegram.org/bot" + BOT_TOKEN + "/sendMessage?chat_id=" + CHAT_ID + "&text="
+url = r"https://api.telegram.org/bot" + BOT_TOKEN + r"/sendMessage?chat_id=" + CHAT_ID + "&text="
 text = ""
 text += names[0] + '\n' + ress[0] + '\n\n'
 text += names[1] + '\n' + ress[1]
