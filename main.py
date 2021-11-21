@@ -81,7 +81,7 @@ for user in  USERS:
     names+=[name]
     
 from urllib import request
-url = r"https://api.telegram.org/bot2110622320:AAG8HMIjWNV8UcqbkuJQbSkUzBt3dzFu47g/sendMessage?chat_id=-1001785972333&text="
+url = r"https://api.telegram.org/bot2095845659:AAF7G9A64SzUDswfAP8gXGlX3Mm0LGEE1yc/sendMessage?chat_id=-1001693376379&text="
 text = ""
 text += names[0] + '\n' + ress[0] + '\n\n'
 text += names[1] + '\n' + ress[1]
