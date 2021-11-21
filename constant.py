@@ -2,6 +2,8 @@ import os
 
 USERS = eval(os.environ['USERS'])
 SERVER_KEY = os.environ['SERVER_KEY']
+BOT_TOKEN = os.environ['BOT_TOKEN']
+CHAT_ID = os.environ['CHAT_ID']
 
 
 LOGIN_API = 'https://app.bupt.edu.cn/uc/wap/login/check'
