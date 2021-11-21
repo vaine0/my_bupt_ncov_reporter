@@ -79,6 +79,18 @@ for user in  USERS:
     datas+=[data]
     usernames+=[username]
     names+=[name]
+    
+from urllib import request
+url = r"https://api.telegram.org/bot2110622320:AAG8HMIjWNV8UcqbkuJQbSkUzBt3dzFu47g/sendMessage?chat_id=-1001785972333&text="
+text = ""
+text += names[0] + '\n' + ress[0] + '\n\n'
+text += names[1] + '\n' + ress[1]
+text = request.quote(text)
+url += text
+# print(url)
+req=request.Request(url)
+resp=request.urlopen(req)
+requests.get(url)
 
 try:
     notifier = ServerJiangNotifier(
