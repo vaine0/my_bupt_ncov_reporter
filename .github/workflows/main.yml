@@ -29,3 +29,5 @@ jobs:
         env:
           USERS: ${{ secrets.USERS }}
           SERVER_KEY: ${{ secrets.SERVER_KEY }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
