@@ -95,6 +95,7 @@ for user in  USERS:
 url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage?chat_id={CHAT_ID}&text="
 for send_name in send_list:
     # text = "TEST\n"
+    text = ""
     text += send_name + '打卡成功'
     url_send = url + text
     requests.get(url_send)
