@@ -52,6 +52,10 @@ def ncov_report(username, password, name, is_useold):
         except:
             print("加载昨日数据错误，采用固定数据")
             post_data = json.loads(copy.deepcopy(INFO).replace("\n", "").replace(" ", ""))
+            # 强行覆盖一些字段
+            post_data['ismoved'] = 0  # 是否移动了位置？否
+            post_data['bztcyy'] = ''  # 不在同城原因？空
+            post_data['sfsfbh'] = 0  # 是否省份不合？否
     report_res = session.post(
         REPORT_API,
         data=post_data,
